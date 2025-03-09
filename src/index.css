@@ -1,0 +1,130 @@
+body{
+  font-family: "Architects Daughter", cursive;
+  background-color: #ffeaa7;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container{
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
+  border-radius: 20px;
+  width: 50vw;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading{
+  transform: rotate(2deg);
+  padding: 0.2rem 1.2rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  background-color: #fdcb6e;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50%;
+}
+
+.form{
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+
+.task-input{
+  border: none;
+  border-bottom: dashed #fdcb6e 3px;
+  width: 85%;
+  font-size: 1.3em;
+}
+
+.task-input:focus, .inputTodo{
+  outline: none;
+}
+
+.button{
+  padding: 7px 20px;
+  border: solid 2px;
+  border-radius: 5px;
+  /* width: 15%; */
+  background-color: #fff;
+  font-size: 1.1em;
+}
+
+.button:hover{
+  background-color: #ffeaa7;
+  transition: transform .3s ease-out;
+  transform: scale(1.05);
+  -webkit-transition: transform .3s ease-out;
+  -moz-transition: transform .3s ease-out;
+  -ms-transition: transform .3s ease-out;
+  -o-transition: transform .3s ease-out;
+}
+
+.tasks{
+  font-size: 1.6em;
+  align-self: flex-start;
+  padding: 0;
+}
+
+.inputTodo{
+  flex-grow: 1;
+  font-size: 1.6em;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 70%;
+  background-color: transparent;
+}
+
+.checkbox{
+  height: 25px;
+  width: 25px;
+}
+
+input[type="checkbox"]{
+  accent-color: #fdcb6e;
+}
+
+input:disabled{
+  color: #000;
+}
+
+input, button{
+  vertical-align: middle;
+}
+
+.edit-btn{
+  height: 25px;
+  width: 25px;
+  padding: 0;
+  margin: 3px;
+}
+
+.edit-img{
+  height: 20px;
+  width: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding-left: 10px; 
+  position: relative;
+}
+
+li::before {
+  content: "•";
+  color: #fdcb6e;
+  position: absolute;
+  left: -15px;
+  font-size: 2.5em;
+}
